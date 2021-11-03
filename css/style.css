@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+    align-items: center;
+
+}
+.menu{
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    align-items: flex-start;
+    right: 0;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    top: 100px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: relative;
+    text-decoration: underline blue 2px;
+}
+
+h2{
+    margin-bottom: 20px;
+    text-align: center;
+    color: red;
+
+
+}
+
+
+
+body{
+    background-color: orange;
+
+
+}
+img{
+    height: 200px;
+    float: bottom;
+    display: block;
+    margin-bottom: 20px;
+
+
+
+
+}
+
+
+.menuIcon{
+    position: absolute;
+    left: -300px;
+    top: -10px;
+    right: -120px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    conte
+    color: white;
+    background-color: grey;
+    min-height: 90px;
+    transition: 0.125s;
+}
+
+.bar{
+    height: 10px;
+    width: 40%;
+    background-color: white;
+}
+
+
+
+@media ( max-width: 800px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        left: 20px;
+        top: 70px;
+        right: 20px;
+
+
+    }
+
+    .menuIcon {
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        left: -80px;
+        top: -1px;
+        right: -60px;
+    }
+    h1 {
+        position: absolute;
+        text-align: center;
+        color: red;
+        top: 100px;
+        right: 20px;
+        left: 150px;
+        text-decoration: underline blue 2px;
+    }
+    h2{
+       position: absolute;
+        text-align: center;
+        color: red;
+        top: 120px;
+        right: 20px;
+        left: 200px;
+    }
+    img{
+        height: 200px;
+        float: right;
+        display: block;
+        margin-bottom: 20px;
+
+
+
+
+    }
+
+}
